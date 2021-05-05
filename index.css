@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+div button {
+  padding: 5px 10px;
+  color: white;
+  background-color: lightsalmon;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+div ul {
+  display: none;
+}
+
+div[dropdown] {
+  position: relative;
+}
+
+div[dropdown] ul {
+  position: absolute;
+  width: 200px;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+div[dropdown] ul li {
+  padding: 5px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div[dropdown] ul li:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+div[dropdown] ul li:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+}
